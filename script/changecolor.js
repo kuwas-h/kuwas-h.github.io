@@ -3,6 +3,7 @@ const greeting = document.querySelector('.greeting');
 const colorbutton = document.querySelector('.button-list');
 colorbutton.addEventListener("click", changecolor);
 function changecolor(event){
+  out(event.target.tagName);
   if(event.target.tagName != 'button')return;
   const color = event.target.value;
   out(color);
