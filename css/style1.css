@@ -1,3 +1,6 @@
+:root {
+  --main-color: red;
+}
 .greeting {
-  color: red;
+  color: var(--main-color);
 }
