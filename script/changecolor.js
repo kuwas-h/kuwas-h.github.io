@@ -1,6 +1,6 @@
 import {out} from '/script/out.js';
-const greeting = document.querySelector('.greeting');
-const colorbutton = document.querySelector('.button-list');
+let greeting = document.querySelector('.greeting');
+let colorbutton = document.querySelector('.button-list');
 colorbutton.addEventListener("click", changecolor);
 function changecolor(event){
   out(event.target.tagName);
