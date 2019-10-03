@@ -6,10 +6,11 @@
 }
 .button-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 200px;
 }
 .button-list button {
   flex: 1 1 30px;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 2px;
 }
