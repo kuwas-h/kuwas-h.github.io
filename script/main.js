@@ -1,2 +1,2 @@
 import * as cc from '/script/changecolor.js';
-cc.out(greeting);
+cc.out(cc.greeting);
