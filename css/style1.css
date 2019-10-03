@@ -2,6 +2,7 @@
   --main-color: red;
 }
 .greeting {
+  margin: 10px;
   font-size: larger;
   color: var(--main-color);
 }
@@ -16,5 +17,5 @@
 }
 .button-list button {
   flex: 1 1 30px;
-  border-radius: 2px;
+  border-radius: 9px;
 }
