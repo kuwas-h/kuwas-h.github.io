@@ -21,7 +21,13 @@
 <button value="blue">あお</button>
 </ul>
 <p id="out"></p>
+<p id="console"></p>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="TLに表示されてから30秒以内にRTしないと不幸なことが起こる呪いのツイートです。今すぐRTしましょう。" data-via="kuwas_h" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <script type="module" src="/script/main.js" async></script>
+<script>
+window.onerror = function(msg, file, line){
+  document.querySelector('#console').innerHTML += file + " " + line + "<br>" + msg;
+}
+</script>
 </body>
