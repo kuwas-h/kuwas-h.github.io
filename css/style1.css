@@ -3,6 +3,7 @@
   color: var(--main-color);
 }
 .greeting {
+  font-size: larger;
   color: var(--main-color);
 }
 .button-list {
