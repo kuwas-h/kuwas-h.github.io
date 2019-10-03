@@ -4,3 +4,12 @@
 .greeting {
   color: var(--main-color);
 }
+.button-list {
+  display: flex;
+  width: 200px;
+}
+.button-list button {
+  flex: 1 1 30px;
+  flex-direction: column;
+  justify-content: center;
+}
