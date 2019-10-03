@@ -6,5 +6,5 @@ function changecolor(event){
   out(event.target.innerHTML);
   const color = event.target.value;
   out(color);
-  elem.style.setProperty('--main-color', color);
+  greeting.style.setProperty('--main-color', color);
 };
