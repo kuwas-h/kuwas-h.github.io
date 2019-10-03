@@ -1,9 +1,11 @@
 :root {
   --main-color: red;
-  color: var(--main-color);
 }
 .greeting {
   font-size: larger;
+  color: var(--main-color);
+}
+.description {
   color: var(--main-color);
 }
 .button-list {
