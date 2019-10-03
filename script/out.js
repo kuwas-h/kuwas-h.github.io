@@ -1,3 +1,3 @@
 function out(s){
-  document.querySelector("#out").innerText = s;
+  document.querySelector("#out").innerHTML = s;
 }
