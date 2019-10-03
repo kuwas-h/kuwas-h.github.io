@@ -1,3 +1,3 @@
-function out(s){
+export function out(s){
   document.querySelector("#out").innerHTML = s;
 }
