@@ -1,0 +1,34 @@
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="/css/style1.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@kuwas_h" />
+<meta name="twitter:creator" content="@kuwas_h" />
+<meta property="og:url" content="https://kuwas-h.github.io" />
+<meta property="og:title" content="だいたいテスト用のページ" />
+<meta property="og:description" content="ここにはこのサイトの説明文を載せるらしいけど何も掲載していないので説明しようがない" />
+<meta property="og:image" content="https://kuwas-h.github.io/ba-nana.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image:alt" content="ﾊﾞｰﾅﾅ♪ﾊﾞﾅﾅ♪ﾊﾞｰﾅﾅ♪求人♪ﾊﾞｰﾅﾅ♪ﾊﾞｰﾅﾅで高収入♪" />
+</head>
+<body>
+<p class="greeting">やぁ</p>
+<p class="description">暇つぶしと動作確認のためのページだよ</p>
+<div class="button-list">
+<button value="red" style="background-color: red;">あか</button>
+<button value="green" style="background-color: green;">みどり</button>
+<button value="blue" style="background-color: blue;">あお</button>
+</div>
+<p id="out"></p>
+<p id="console"></p>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="くわすサンドボックス" data-via="kuwas_h" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script type="module" src="/script/main.js" async></script>
+<script>
+window.onerror = function(msg, file, line){
+  document.querySelector('#console').innerHTML += file + " " + line + "<br>" + msg;
+}
+</script>
+</body>
