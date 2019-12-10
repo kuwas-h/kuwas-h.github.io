@@ -1,4 +1,4 @@
-import {out} from '/script/out.js';
+import {out} from '/test2/script/out.js';
 let greeting = document.querySelector('.greeting');
 let colorbutton = document.querySelector('.button-list');
 colorbutton.addEventListener("click", changecolor);
