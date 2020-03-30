@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'logotype';
+    src: url('logotypejp_mp_b_1.1.ttf');
+}
+header {
+    float: 1 0 100%;
+    background-color: lightsteelblue;
+}
+#wrapper {
+    display: flex;
+}
+@media (max-width: 767px) {
+    #wrapper {
+        flex-wrap: wrap;
+    }
+}
+#main {
+    flex: 1 1 100%;
+    background-color: deepskyblue;
+    position: relative;
+    font-family: 'logotype', 'HG正楷書体-PRO', 'HG行書体';
+}
+#main:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+#field {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#field_wrapper_1 {
+    width: 50%;
+    height: 50%;
+    background-color: lime;
+    animation: ani1 2s linear infinite;
+}
+#field_wrapper_2 {
+    width: 80%;
+    height: 80%;
+    background-color: mediumslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani2 2s linear infinite;
+}
+#text_wrapper {
+    display: inline-block;
+    animation: ani3 2s linear infinite;
+}
+#text_wrapper span {
+    display: inline-block;
+    padding: 0.15em;
+}
+#text_1 {
+    animation: ani4 2s linear infinite;
+}
+#text_2 {
+    animation: ani5 2s linear infinite;
+}
+@keyframes ani1 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes ani2 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes ani3 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes ani4 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-1080deg); }
+}
+@keyframes ani5 {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-1080deg); }
+}
+#controller {
+    flex: 1 0 300px;
+    background-color: grey;
+}
